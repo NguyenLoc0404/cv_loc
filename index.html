@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Page Title</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+</head>
+
+<body>
+
+
+
+    <div class="row" style="margin: 0;">
+
+        <nav class="navbar-expand-lg navbar-light col-xl-2" id="navbar" style="background-color: #2f3742;">
+
+            <div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar_content"
+                    aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+
+
+            <div class="collapse navbar-collapse" id="navbar_content">
+                <ul class="nav flex-column">
+                    <li>
+                        <a class="navbar-brand">
+                            <img src="images/logo.png" alt="logo" style="width:130px;">
+                        </a>
+                    </li>
+                    <li class="nav-item selected" id="home_navItem">
+                        <a class="nav-link" href="#home" style="color: white;" onclick="addCssNavBar(event)">HOME</a>
+                    </li>
+                    <li class="nav-item" id="about_navItem">
+                        <a class="nav-link" href="#about" style="color: white;" onclick="addCssNavBar(event)">ABOUT</a>
+                    </li>
+                    <li class="nav-item" id="skills_navItem">
+                        <a class="nav-link" href="#skills" style="color: white;"
+                            onclick="addCssNavBar(event)">SKILLS</a>
+                    </li>
+                    <li class="nav-item" id="experience_navItem">
+                        <a class="nav-link" style="color: white;" href="#experience"
+                            onclick="addCssNavBar(event)">EXPERIENCE</a>
+                    </li>
+                    <li class="nav-item" id="education_navItem">
+                        <a class="nav-link" href="#education" style="color: white;"
+                            onclick="addCssNavBar(event)">EDUCATION</a>
+                    </li>
+                    <li class="nav-item" id="portfolio_navItem">
+                        <a class="nav-link" href="#portfolio" style="color: white;"
+                            onclick="addCssNavBar(event)">PORTFOLIO</a>
+                    </li>
+                    <li class="nav-item" id="contact_navItem">
+                        <a class="nav-link" href="#contact" style="color: white;"
+                            onclick="addCssNavBar(event)">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+
+
+        <div class="col-xl-10" style="padding-left: 0">
+            <div class="tab-content" style="position: relative;z-index: 1;">
+                <a href="#home"
+                    style="position: fixed;bottom: 0;right: 0;margin: 1%;color: #07cb79;;overflow: hidden;z-index: 999;">
+                    <i class="far fa-arrow-alt-circle-up" style="font-size: 40px;"></i>
+                </a>
+                <div id="home">
+                    <div style="display: flex;align-items: center; height: 500px;padding: 2%;background-image: url('./images/4.jpg');
+                    background-position: center;background-repeat: no-repeat;background-size: cover;">
+                        <div>
+                            <h1 style="color: white;">
+                                HELLO, I'M
+                                <span style="display: block;">
+                                    NGUYEN TAN LOC
+                                </span>
+                            </h1>
+                            <h3
+                                style="color: white;color: white; display: inline-block;border-bottom: 1px solid;border-top: 1px solid;">
+                                FRONTEND DEVELOPER
+                            </h3> <br>
+
+                            <a class="download_cv" href="./download/Nguyen-Tan-Loc-TopCV.pdf" download>
+                                DOWNLOAD RESUME AS PDF FORMAT
+                                <i class="fas fa-download"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="about">
+
+                    <div style="padding: 2%;">
+                        <div class="border-center">
+                            <h3>ABOUT ME</h3>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 col-lg-3 " style="text-align: center;">
+                                <img src="./images/3.jpg"
+                                    style="max-width: 100%;padding: 1%;border: 1px solid #07cb79;">
+                                <h5>Frontend Developer</h5>
+                            </div>
+                            <div class=" col-md-6 col-lg-9 ">
+                                <div class="row" style="margin-right: 0;margin-left: 0;">
+
+                                    <div class="col-12 col-lg-6" style="padding: 0;margin-top: 3%;">
+                                            <div style="background-color: #07cb79;display: inline-block;padding: 12px 15px;float: left;">
+                                                <span class="fas fa-user" style="font-size: 20px;color: white;"></span>
+                                            </div>
+                                            <div style="float: left;padding-left: 1%;">
+                                                <p style="margin-bottom: 0;">Name</p>
+                                                <p style="margin-bottom: 0;">Nguyen Tan Loc</p>
+                                            </div>
+
+                                    </div>
+
+                                    <div class="col-12 col-lg-6" style="padding: 0;;margin-top: 3%;">
+                                        <div style="background-color: #07cb79;display: inline-block;padding: 12px 15px;float: left;">
+                                            <span class="fas fa-envelope" style="font-size: 20px;color: white;"></span>
+                                        </div>
+                                        <div style="float: left;padding-left: 1%;">
+                                            <p style="margin-bottom: 0;">Email</p>
+                                            <p style="margin-bottom: 0;">loc.tannguyen0404@gmail.com</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-lg-6" style="padding: 0;margin-top: 3%;">
+                                        <div style="background-color: #07cb79;display: inline-block;padding: 12px 15px;float: left;">
+                                            <span class="fas fa-phone-volume"
+                                                style="font-size: 20px;color: white;"></span>
+                                        </div>
+                                        <div style="float: left;padding-left: 1%;">
+                                            <p style="margin-bottom: 0;">Phone</p>
+                                            <p style="margin-bottom: 0;">0326015702</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-lg-6" style="padding: 0;margin-top: 3%;">
+                                        <div style="background-color: #07cb79;display: inline-block;padding: 12px 15px;float: left;">
+                                            <span class="fas fa-calendar-alt"
+                                                style="font-size: 20px;color: white;"></span>
+                                        </div>
+                                        <div style="float: left;padding-left: 1%;">
+                                            <p style="margin-bottom: 0;">Date Of Birthday</p>
+                                            <p style="margin-bottom: 0;">04 April</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-lg-7" style="padding: 0;margin-top: 3%;">
+                                        <div style="background-color: #07cb79;display: inline-block;padding: 12px 15px;float: left;">
+                                            <span class="fas fa-map-marker-alt"
+                                                style="font-size: 20px;color: white;"></span>
+                                        </div>
+                                        <div style="float: left;padding-left: 1%;">
+                                            <p style="margin-bottom: 0;">Address</p>
+                                            <p style="margin-bottom: 0;">Tan Phu Ward, Ho Chi Minh City , Viet Nam</p>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+
+                                <div>
+                                    <p style="display: inline-block;">
+                                        Social Profiles
+                                    </p>
+                                    <div style="display: inline-block;border: 1px solid grey; padding: 5px 10px;">
+                                        <a target="_blank" rel="noopener noreferrer"
+                                            href="https://www.facebook.com/nttloc0404" style="cursor: pointer;">
+                                            <span class="fab fa-facebook-f" style="font-size: 20px;color: grey;"></span>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <p>I have more than <span style="font-weight: bold;">1 years of experience</span
+                                        style="font-weight: bold;"> in the field of <span>Web Design and Web
+                                        Development</span>.
+                                </p>
+                                <p>
+                                    <span style="font-weight: bold;">My objectives</span> are increasing my knowledge in
+                                    computer science fields and new
+                                    technologies especially, web development. Always looking
+                                    forward to learn new technologies.
+                                </p>
+
+                                <a style="margin-top:2%"
+                                    href="https://preview.themeforest.net/item/moraco-personal-vcard-resume-html-template/full_screen_preview/17969131?_ga=2.113745601.717451109.1625884545-1175891922.1625020077"
+                                    target="_blank">
+                                    Simple Template</a>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+                <div id="skills">
+
+                    <div style="padding: 2%;">
+                        <div class="border-center">
+                            <h3>SKILLS</h3>
+                        </div>
+                        <h5>
+                            Just My Awesome Skills
+                        </h5>
+                        <div class="row">
+                            <div class="col-12 col-md-6" style="display: flex; align-items: center; margin-bottom: 2%;">
+                                <div
+                                    style="background-image: linear-gradient(135deg,transparent 50%, #07cb79 50% ), linear-gradient(90deg,#ddd 50%, #07cb79 50%);
+                                        display: inline-block;padding: 8px;border-radius: 50%; background-color: #aeaeae;">
+                                    <div
+                                        style="width: 100px;height: 100px;border-radius: 50%;background-color: white;;display: flex;align-items: center;">
+                                        <h2 style="padding-left: 30%;">
+                                            72%
+                                        </h2>
+                                    </div>
+                                </div>
+                                <div style="display: inline-block; margin-left: 2%;">
+                                    <h2>ANGULAR</h2>
+                                    <P>Medium, 9 months</P>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-md-6" style="display: flex; align-items: center; margin-bottom: 2%;">
+                                <div
+                                    style="background-image: linear-gradient(108deg,transparent 50%, #07cb79 50% ), linear-gradient(90deg,#ddd 50%, #07cb79 50%);
+                                        display: inline-block;padding: 8px;border-radius: 50%; background-color: #aeaeae;">
+                                    <div
+                                        style="width: 100px;height: 100px;border-radius: 50%;background-color: white;;display: flex;align-items: center;">
+                                        <h2 style="padding-left: 30%;">
+                                            60%
+                                        </h2>
+                                    </div>
+                                </div>
+                                <div style="display: inline-block; margin-left: 2%;">
+                                    <h2>JAVASCRIPT</h2>
+                                    <P>Medium, 5 months</P>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-md-6" style="display: flex; align-items: center; margin-bottom: 2%;">
+                                <div
+                                    style="background-image: linear-gradient(122deg,transparent 50%, #07cb79 50% ), linear-gradient(90deg,#ddd 50%, #07cb79 50%);
+                                        display: inline-block;padding: 8px;border-radius: 50%; background-color: #aeaeae;">
+                                    <div
+                                        style="width: 100px;height: 100px;border-radius: 50%;background-color: white;;display: flex;align-items: center;">
+                                        <h2 style="padding-left: 30%;">
+                                            70%
+                                        </h2>
+                                    </div>
+                                </div>
+                                <div style="display: inline-block; margin-left: 2%;">
+                                    <h2>HTML- CSS</h2>
+                                    <P>Medium, 5 months</P>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-md-6" style="display: flex; align-items: center; margin-bottom: 2%;">
+                                <div
+                                    style="background-image: linear-gradient(-90deg,transparent 50% , #ddd 50%), linear-gradient(90deg,#ddd 50%, #07cb79 50%);
+                                        display: inline-block;padding: 8px;border-radius: 50%; background-color: #aeaeae;">
+                                    <div
+                                        style="width: 100px;height: 100px;border-radius: 50%;background-color: white;;display: flex;align-items: center;">
+                                        <h2 style="padding-left: 30%;">
+                                            50%
+                                        </h2>
+                                    </div>
+                                </div>
+                                <div style="display: inline-block; margin-left: 2%;">
+                                    <h2>NODE JS</h2>
+                                    <P>Medium, 5 months</P>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h5>
+                            KNOWLEDGE
+                        </h5>
+                        <div style="margin-bottom: 2%;">
+                            I have knowledge of:
+                            <div class="row">
+                                <div class="col-3">
+                                    <span style='font-size:15px;padding-right: 1%;'>&#10003;</span>React Js
+                                </div>
+                                <div class="col-3">
+                                    <span style='font-size:15px;padding-right: 1%;'>&#10003;</span>Next Js
+                                </div>
+                                <div class="col-3">
+                                    <span style='font-size:15px;padding-right: 1%;'>&#10003;</span>Node Js
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-3">
+                                    <span style='font-size:15px;padding-right: 1%;'>&#10003;</span>My SQL
+                                </div>
+                                <div class="col-3">
+                                    <span style='font-size:15px;padding-right: 1%;'>&#10003;</span>Mongo DB
+                                </div>
+                            </div>
+                        </div>
+                        <h5>
+                            CERTIFICATIONS
+                        </h5>
+                        <div>
+                            I have completed some certificate:
+                            <div class="row" style="margin-top: 1%;">
+                                <div class="col-12 col-lg-6">
+                                    <img src="./images/toeic.jpg"
+                                        style="width: 300px; height: 80px; display: block;margin-bottom:1%">
+                                    <p>Toeic Certificate With Score 500</p>
+                                </div>
+
+                                <div class="col-12 col-lg-6">
+                                    <img src="./images/MIN-OP1.png"
+                                        style="width: 300px; height: 80px; display: block;margin-bottom:1%">
+                                    <p style="margin-bottom: 0;">Mern Stack Certificate Of Cybersoft Academy</p>
+                                    <p> With Grade: Good</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="experience">
+
+                    <div style="padding: 2%;">
+
+                        <div class="border-center">
+                            <h3>EXPERIENCE</h3>
+                        </div>
+
+                        <div class="row" style="margin-top: 2%;">
+                            <div class="col-5" style="margin-top: 1%;">
+                                <div>
+                                    <p class="infor_tail_first_left">NETS SOLUTION</p>
+                                    <p class="infor_tail_second">SOFTWARE ENGINEER
+                                        <span>
+                                            ( APR 2020 - APR 2021 )
+                                        </span>
+                                    </p>
+                                    <p style="margin-bottom: 0;background-color: aliceblue;padding-left: 2%;">
+                                        Develop Frontend With Angular: maintain, fix bugs, and develop some feature
+                                        <br>
+                                        Develop BackEnd with NodeJS: maintain and write API
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="experience_middle col-2">
+                                <p style="font-weight: bold;color: #07cb79;margin-top: 15%;">2020</p>
+                            </div>
+
+                            <div class="col-5"></div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-5"></div>
+
+                            <div class="experience_middle col-2">
+                                <p style="font-weight: bold;color: #07cb79">2019</p>
+                            </div>
+
+                            <div class="col-5">
+                                <div>
+                                    <p class="infor_tail_first_right">ACEXIS | INNOS</p>
+                                    <p class="infor_tail_second">INTERN
+                                        <span>
+                                            ( NOV 2019 - FEB 2020 )
+                                        </span>
+                                    </p>
+                                    <p style="margin-bottom: 0;background-color: aliceblue;padding-left: 2%;">
+                                        Finished Intern at Acexis | Innos <br>
+                                        Completed App Oder food <br>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-5">
+                                <div>
+                                    <p class="infor_tail_first_left">RESOURCES AND ENVIROMENTAL OFFICE</p>
+                                    <p class="infor_tail_second">MANAGEMENT OF LAND ENGINEER
+                                        <span>
+                                            ( SEP 2012 - DEC 2013 )
+                                        </span>
+                                    </p>
+                                    <p style="margin-bottom: 0;background-color: aliceblue;padding-left: 2%;">
+                                        Worked at Resources and Environmental office
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="experience_middle col-2">
+                                <p style="font-weight: bold;color: #07cb79">2012</p>
+                            </div>
+
+                            <div class="col-5"></div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div id="education">
+                    <div style="padding: 2%;">
+                        <div class="border-center">
+                            <h3>EDUCATION</h3>
+                        </div>
+
+                        <div class="row" style="margin-top: 2%;">
+                            <div class="col-5" style="margin-top: 1%;">
+                                <div>
+                                    <p class="infor_tail_first_left">BACH KHOA UNIVERSITY</p>
+                                    <p class="infor_tail_second">COMPUTER SCIENCE
+                                        <span>
+                                            ( SEP 2014 - DEC 2020 )
+                                        </span>
+                                    </p>
+                                    <p style="margin-bottom: 0;background-color: aliceblue;padding-left: 2%;">
+                                        I'm learning Computer Scient at Faculty Of Computer Science And Engineering
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="experience_middle col-2">
+                                <p style="font-weight: bold;color: #07cb79; margin-top: 15%;">2014</p>
+                            </div>
+
+                            <div class="col-5"></div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-5"></div>
+
+                            <div class="experience_middle col-2">
+                                <p style="font-weight: bold;color: #07cb79">2008</p>
+                            </div>
+
+                            <div class="col-5">
+                                <div>
+                                    <p class="infor_tail_first_right">NONG LAM UNIVERSITY</p>
+                                    <p class="infor_tail_second">MANAGEMENT OF LAND
+                                        <span>
+                                            ( SEP 2008 - SEP 2012 )
+                                        </span>
+                                    </p>
+                                    <p style="margin-bottom: 0;background-color: aliceblue;padding-left: 2%;">
+                                        I have completed learning Management Of Land at Nong Lam university
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div id="portfolio">
+
+                    <div style="padding: 2%;">
+                        <div class="border-center">
+                            <h3>PORTFOLIO</h3>
+                        </div>
+
+                        <p>
+                            I have done project Home Pharmacy
+                        </p>
+
+                        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="./project/HP_1.png" class="d-block w-100" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5 style="color: red;">with FronTend: maintain, fix bugs, and develop some
+                                            feature</h5>
+                                        <p style="color: red;">With Back End: Maintain and write API</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./project/HP_2.png" class="d-block w-100" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5 style="color: red;">with FronTend: maintain, fix bugs, and develop some
+                                            feature</h5>
+                                        <p style="color: red;">With Back End: Maintain and write API</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button"
+                                data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button"
+                                data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+
+                        <p>
+                            I have done project Home Pharmacy Portol
+                        </p>
+
+                        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="./project/HPC_1.png" class="d-block w-100" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5 style="color: red;">With FronTend: maintain, fix bugs, and develop some
+                                            feature</h5>
+
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./project/HPC_2.png" class="d-block w-100" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5 style="color: red;">with FronTend: maintain, fix bugs, and develop some
+                                            feature</h5>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button"
+                                data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button"
+                                data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+                <div id="contact">
+
+                    <div style="padding: 2%;">
+                        <div class="border-center">
+                            <h3>CONTACT ME</h3>
+                        </div>
+
+
+                        <div class="row" style="margin-top: 2%;">
+                            <div class="col-lg-4 col-md-6">
+                                <h5>CONTACT ADDRESS</h5>
+
+                                <div style="margin-top: 2%;display: flex; align-items: center;">
+                                    <div
+                                        style="background-color: #07cb79;display: inline-block;padding:7px 10px;float: left;">
+                                        <span class="fas fa-map-marker-alt"
+                                            style="font-size: 20px;color: white;"></span>
+                                    </div>
+                                    <div style="margin-left: 1%;">
+                                        <p style="margin-bottom: 0;"><span style="font-weight: bold;">Address:
+                                            </span>
+                                            Tan Phu Ward, Ho Chi Minh City , Viet Nam</p>
+                                    </div>
+                                </div>
+
+                                <div style="margin-top: 2%;display: flex; align-items: center;">
+                                    <div
+                                        style="background-color: #07cb79;display: inline-block;padding:7px 10px;float: left;">
+                                        <span class="fas fa-phone-volume" style="font-size: 20px;color: white;"></span>
+                                    </div>
+                                    <div style="margin-left: 1%;">
+                                        <p style="margin-bottom: 0;">
+                                            <span style="font-weight: bold;">Phone: </span> 0326015702
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div style="margin-top: 2%;display: flex; align-items: center;">
+                                    <div
+                                        style="background-color: #07cb79;display: inline-block;padding:7px 10px;float: left;">
+                                        <span class="fab fa-skype" style="font-size: 20px;color: white;"></span>
+                                    </div>
+                                    <div style="margin-left: 1%;">
+                                        <p style="margin-bottom: 0;"><span style="font-weight: bold;">Skype:
+                                            </span> loc.tannguyen0404@gmail.com</p>
+                                    </div>
+                                </div>
+
+                                <div style="margin-top: 2%;display: flex; align-items: center;">
+                                    <div
+                                        style="background-color: #07cb79;display: inline-block;padding:7px 8px;float: left;">
+                                        <span class="fas fa-envelope" style="font-size: 20px;color: white;"></span>
+                                    </div>
+                                    <div style="margin-left: 1%;">
+                                        <p style="margin-bottom: 0;">
+                                            <span style="font-weight: bold;">Email: </span>
+                                            loc.tannguyen0404@gmail.com
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div
+                                    style="display: inline-block;border: 1px solid grey; padding: 5px 11px; margin-top: 1%;">
+                                    <a target="_blank" rel="noopener noreferrer"
+                                        href="https://www.facebook.com/nttloc0404" style="cursor: pointer;">
+                                        <span class="fab fa-facebook-f" style="font-size: 20px;color: grey;"></span>
+                                    </a>
+                                </div>
+
+
+
+
+                            </div>
+                            <div class="col-lg-8 col-md-6">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.2837993911717!2d106.62435701526027!3d10.789562261900361!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752c01a69e3785%3A0xafe1803e9c20e30f!2zMTE4IFTDom4gSMawxqFuZywgVMOibiBRdcO9LCBUw6JuIFBow7osIFRow6BuaCBwaOG7kSBI4buTIENow60gTWluaCwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1626501638311!5m2!1svi!2s"
+                                    width="100%" height="450" style="border:0;" allowfullscreen=""
+                                    loading="lazy"></iframe>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

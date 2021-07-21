@@ -1,0 +1,133 @@
+.selected {
+    color: #07cb79;
+    border-left: 10px solid #07cb79;
+}
+
+.nav-item a:hover {
+    color: #07cb79;
+    border-left: 10px solid #07cb79;
+}
+
+ .nav-item.selected a:hover {
+    color: none;
+    border-left: none;
+}
+
+
+.infor_tail_first_left {
+    margin-bottom: 0;
+    background-color: #07cb79;
+    color: white;
+    position: relative;
+    padding-left: 2%;
+}
+
+.infor_tail_first_right {
+    margin-bottom: 0;
+    background-color: #07cb79;
+    color: white;
+    position: relative;
+    padding-left: 2%;
+}
+
+.infor_tail_second {
+    margin-bottom: 0;
+    background-color: rgb(0 123 255 / 25%);
+    position: relative;
+    padding-left: 2%;
+}
+
+.infor_tail_first_left:before {
+    content: '';
+    position: absolute;
+    top: 6px;
+    right: -12px;
+    border-top: 6px solid transparent;
+    border-left: 12px solid #07cb79;
+    border-bottom: 6px solid transparent;
+
+}
+
+.infor_tail_first_right:before {
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: -12px;
+    border-top: 6px solid transparent;
+    border-right: 12px solid #07cb79;
+    border-bottom: 6px solid transparent;
+
+}
+
+
+.experience_middle {
+    position: relative;
+    text-align: center;
+}
+
+.experience_middle:before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    border-left: 4px grey solid;
+
+}
+
+.experience_middle p {
+    background-color: white;
+    position: relative;
+
+}
+
+.border-center {
+    width: 100%;
+    position: relative;
+    text-align: center;
+
+}
+
+.border-center:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    border-top: 1px grey solid;
+    width: 100%;
+
+}
+
+.border-center h3 {
+    border: 1px solid #07cb79;
+    display: inline-block;
+    margin-bottom: 0;
+    background-color: white;
+    padding: 5px 10px;
+    position: relative;
+}
+
+
+
+.download_cv {
+    margin-top: 2%;
+    font-size: 15px;
+    color: white;
+    padding: 2% 2%;
+    display: inline-block;
+    background-color: #07cb79;
+
+    background-image: linear-gradient(white, white);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    transition: background-size .5s, color .5s;
+}
+
+.download_cv:hover {
+    text-decoration: none;
+    background-size: 100% 100%;
+    color: #07cb79;
+
+}
