@@ -1,7 +1,13 @@
-.selected {
+
+body{
+    position: relative;
+}
+
+.active {
     color: #07cb79;
     border-left: 10px solid #07cb79;
 }
+
 
 .nav-item a:hover {
     color: #07cb79;
